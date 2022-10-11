@@ -1,0 +1,40 @@
+<!-- HTML Forms -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WebPage_6</title>
+    </head>
+    <!-- Use GET, not POST -->
+    <body method="GET" action="action.php">
+        <form>
+            First Name: <input type="text" name="firstname" required ><br>
+            Last Name:  <input type="text" name="lastname" required><br>
+            Email ID:   <input type="email" name="email" required><br>
+            Password:   <input type="password" minlength="5" name="password" required><br>
+            Date of Birth: <input type="date" name="Date of Birth" required><br>
+            Gender: <br>
+            <input type="radio" name="gender" value="Male"> Male <br>
+            <input type="radio" name="gender" value="Female"> Female <br>
+            <input type="radio" name="gender" value="Others"> Others <br>
+            How did you reach us: <br>
+            <input type="checkbox"> Social Media <br>
+            <input type="checkbox"> Emails <br>
+            <input type="checkbox"> Friends and Family <br>
+            <input type="checkbox"> Others <br>
+            What are your interests?<br>
+            <select name="interests">              
+                <option value="Nature"> Nature </option><br>
+                <option value="Food"> Food </option><br>
+                <option value="Sports"> Sports </option><br>
+                <option value="Technology"> Technology </option><br>
+                <option value="Festivals"> Festivals </option><br>
+            </select><br>
+            <input type="submit" input value="Register"> 
+            <input type="Reset">
+        </form>
+    </body>
+</html> 
+

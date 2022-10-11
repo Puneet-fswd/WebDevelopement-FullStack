@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Switch Statements</title>
+    </head>
+    <body>
+        <h1>Let's understand some fruits</h1>
+        <script>
+            var fruit_type=prompt("Please enter the name of the required fruit");
+            switch (fruit_type)
+            {
+                case watermelon:
+                    console.log("100Rs per peice");
+                    break;
+                case apple:
+                    console.log("180Rs per kg");
+                    break;
+                case pear:
+                    console.log("200Rs per kg");
+                    break;
+                case mango:
+                    console.log("300Rs per dozen");
+                    break;
+                case papaya:
+                    console.log("50Rs peer peice");
+                    break;
+                default:
+                    console.log(`${fruit_type} is not available today`);
+                    break;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Attribute Methods</title>
+    </head>
+    <body>
+        <h1>Attribute Methods in JS</h1>
+        <div class="first" id="hey" data-game="mario" data-player="puneet">Heyy! I am the first container</div>
+        <script>
+            //elements for the syntaxes in the attr methods like element.hasAttributes are to be stored in a variable by using .getElementById()
+
+            let a=hey.getAttribute("class");    //id.get...("class")--> Syntax
+            console.log(a);
+            console.log(hey.hasAttribute("class"));    //id.has...("class"/"style"/"id")--> Syntax
+            console.log(hey.hasAttribute("style"));
+            console.log(hey.hasAttribute("id"));
+            let b=document.getElementById("hey");
+            b.setAttribute("hidden", true);
+            console.log(document.getElementsByClassName("first"));
+            console.log(b.dataset.player);
+            console.log(b.dataset.game);
+        </script>
+    </body>
+</html>
+

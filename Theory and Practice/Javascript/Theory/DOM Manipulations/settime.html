@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Set Time Interval</title>
+    </head>
+    <body>
+        <div>Setting time intervals in JS</div>
+        <script>
+            let a=setTimeout(function(){alert("Hello World!")}, 1000);     //sets timeout, returns timer Id
+            let b=prompt("Do you want to run timeout again");
+            if(b=="n")
+            {
+                clearTimeout(a);    //stops the time out
+            }
+            console.log(a);  
+            const sum_2=(a,b)=>{console.log("Yes I am running "+ (a+b))};
+            setTimeout(sum_2, 1000, 2, 3);   
+            const sum_3=(a,b,c)=>{console.log("Yes I am running "+ (a+b+c))};  
+            setInterval(sum_3, 99999999999999999999999999999999, 1, 2, 7); 
+        </script>
+    </body>
+</html> 

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM Properties</title>
+    </head>
+    <body>
+        <h1>Advance DOM Properties</h1>
+        <span id="first" hidden>Hey! i am span</span>
+        <script>
+            //console.dir
+            let x=document.getElementsByTagName(`span`)[0];
+            console.log(x);
+            console.dir(x);    //logs the x as an object
+
+            //inner and outer html: valid for element nodes only
+            console.dir(first.innerHTML);
+            first.innerHTML="<i>I am italic</i>"    //inner html can be set also 
+            console.log(first.outerHTML);
+            first.outerHTML="<i>I am italic</i>"    //outer html can be set also
+            console.log(document.body.firstElementChild.data);     //.nodeValue can also be used
+
+            //text content
+            console.log(document.body.textContent);    //used to copy the complete website as a text
+
+            // hidden attribute: does not show in the console 
+            // can be removed by using $0=false or first.hidden=false
+        </script>
+    </body>
+</html>

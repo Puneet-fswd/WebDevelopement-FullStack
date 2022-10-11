@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Question-2 | Solution</title>
+    </head>
+    <body>
+        <button onclick="product">Click Here</button>
+        <script>
+            function product()
+            {
+                let a = prompt('Enter first number');
+                let b = prompt('Enter second number');
+                let c = prompt('Enter third number');
+                let sign = " ";
+                if((a*b*c)<0)
+                {
+                    sign = "-";
+                }
+                else if((a*b*c)==0)
+                {
+                    alert('Why did you put zero!');
+                }
+                else
+                {
+                    sign = "-";
+                }
+                console.log(`the numbers were ${a}, ${b}, ${c} and the product is ${sign}`);
+                console.log(`the sign of the product is ${sign}`);
+            }
+        </script>
+    </body>
+</html>

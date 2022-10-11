@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Question-11 | Solution</title>
+        <style>
+            *
+            {
+                font-family: monospace;
+            }
+            #btn
+            {
+                padding: 10px;
+                background-color: rgb(34, 32, 32);
+                color: greenyellow;
+                border-radius: 20px;
+                margin-top: 5px;
+                margin-left: 2.5%;
+
+            }
+            #btn:hover
+            {
+                padding: 14px;
+                color: orange;
+                cursor: pointer;
+                margin-left: 2%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Loading random images</h1>
+        <button id="btn" onclick="display_pic();" value="Click">Click here to get an image!</button>
+        <script>
+            function display_pic()
+            {
+                var theImages = [{
+                                src: "https://www.bwallpaperhd.com/wp-content/uploads/2021/01/NashPoint.jpg",
+                                width: "300",
+                                height: "300"
+                            }, {
+                                src: "https://th.bing.com/th/id/OIP.jqQrNGIEqLrv4vz1wR1i0gHaFj?pid=ImgDet&w=200&h=150&c=7&dpr=1.5",
+                                width: "300",
+                                height: "300"
+                            }, {
+                                src: "https://th.bing.com/th/id/OIP.iED8hXCmmFsBKB2jJPVKggHaE8?pid=ImgDet&w=200&h=133&c=7&dpr=1.5",
+                                width: "300",
+                                height: "300"
+                            }, {
+                                src: "https://th.bing.com/th/id/OIP.Qcelqif8KhMf_3IIek2tzgHaE8?pid=ImgDet&w=200&h=133&c=7&dpr=1.5",
+                                width: "300",
+                                height: "300",
+                            }];
+                var preBuffer=[];
+                for(var i=0;i<theImages.length;i++)
+                {
+                    preBuffer[i]=new Image();
+                    preBuffer[i].src = theImages[i].src;
+                    preBuffer[i].width = theImages[i].width;
+                    preBuffer[i].height = theImages[i].height;
+                }
+                //create random image number
+                function getRandomInt(min, max)
+                {
+                    imn=Math.floor(Math.random()*max-min+1)+min;
+                    return preBuffer[imn];
+                }
+                //generate new image number
+                var newImage = getRandomInt(0, preBuffer.length - 1);
+                // remove the previous images from the screen
+                var images = document.getElementsByTagName('img');
+                var l = images.length;
+                for (var p=0;p<l;p++)
+                {
+                    images[0].parentNode.removeChild(images[0]);
+                }
+                //display the image
+                document.body.append(newImage);
+            }
+        </script>
+    </body>
+</html>

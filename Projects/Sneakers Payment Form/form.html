@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sneakers | Payment</title>
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body method="GET" action="action.php">
+        <div class="container" id="move">
+            <form>
+                <div class="contain">
+                    <header>
+                        <h2 class="title">SNEAKERS</h2>
+                    </header>
+                </div>
+                <div class="container">
+                    <div class="contain1" id="move1">
+                        <h3 class="heading1">Personal Details</h3>
+                        <p>First Name: <input type="text" name="firstname"></p>
+                        <p>Last Name: <input type="text" name="lastname"></p>
+                        <p>
+                            <fieldset>
+                                <legend>
+                                    Gender<br>
+                                </legend>
+                                Male<input type="radio" name="gender" value="male" id="male">    Female<input type="radio" name="gender" value="female" id="female">
+                            </fieldset>
+                        </p>
+                        <p>Email Address: <input type="email" name="email"></p>
+                        <p>Billing Address: <textarea name="address" cols="160" rows="2"></textarea></p>
+                        <p>Contact Number: <input type="number" name="number"></p>
+                    </div>
+                    <br>
+                    <div class="contain2" id="move2">
+                        <h3 class="heading2">Payment Details</h3>
+                        <p>Card Type:
+                            <select>
+                                <option value="">--select card type--</option>
+                                <option value="visa">Visa</option>
+                                <option value="mastercard">Mastercard</option>
+                                <option value="rupay">Rupay</option>
+                            </select>
+                        </p>
+                        <p>
+                            Card Number: <input type="number" name="cardnum">
+                        </p>
+                        <p>
+                            Expiry Date: <input type="date" name="date">    
+                        </p>
+                        <p>
+                            CVV: <input type="password" name="cvv">
+                        </p>
+                        <br>
+                        <input type="submit" value="Pay" id="pay">
+                        <br>
+                        <br>
+                        <img class="logo" src="logo.png" height="80px" width="110px">    
+                    </div>    
+                </div>
+            </form>
+        </div>
+        <footer class="footer">
+            <p>Conditions of Use | Privacy Notice © 2012-2022, Sneakers.com, Inc. and its affiliates</p>
+        </footer>
+    </body>
+</html>

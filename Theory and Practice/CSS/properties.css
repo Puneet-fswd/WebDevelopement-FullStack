@@ -1,0 +1,81 @@
+/* Color Property- Color can be chosen from the pallete or mentioned as #RRGGBB */
+h3
+{
+    color: rgb(0, 7, 0);
+}
+a:hover
+{
+    color: black;
+    text-decoration: double;
+}
+.fruit1
+{
+    color: hsl(62, 89%, 51%);
+    font-size: 250%;
+}
+.fruit2
+{
+    color: rgb(152, 142, 142);
+    font-size: 250%;
+}
+.fruit3
+{
+    color: black;
+    font-size: 250%;
+}
+.fruit4
+{
+    color: black;
+    font-size: 250%;
+}
+.fruit5
+{
+    color: black;
+    font-size: 250%;
+}
+/* Background Image- background-image: url("url") */
+/* Background Repeat: repeat-x or Background Repeat: repeat-y- means repeat bkgd image in x or y axis */
+/* Background Position: Setting position of the background image. ex)background-position: bottom 50px right 100px */
+.fruit1
+{
+    background-image: url("banana.jpg");
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-attachment: scroll;
+    height: 300px;
+    width: 300px;
+}
+.fruit2
+{
+    background-image: url("mango.jpg");
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-attachment: scroll;
+    height: 300px;
+    width: 300px;
+}
+.fruit3
+{
+    background-image: url("orange.jpg");
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-attachment: scroll;
+    height: 300px;
+    width: 300px;
+}
+.fruit4
+{
+    background-image: url("muskmelon.jpg");
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-attachment: scroll;
+    height: 300px;
+    width: 300px;
+}
+ul
+{
+    list-style-type: none;
+}
+
+/* font-size: type */
+/* Short hand properties: background, border, font, margin, padding */

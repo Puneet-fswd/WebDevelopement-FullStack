@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Question-3 | Solution</title>
+        <style>
+            .container
+            {
+                text-align: center;
+                border-radius: 12px;
+                border: double 4px black;
+                margin: auto;
+                height: 200px;
+                width: 300px;
+                margin-top: 2%;
+            }
+            p
+            {
+                margin: auto;
+                margin-top: 18%;
+                text-rendering: auto;
+                word-spacing: inherit;
+            }
+            input
+            {
+                border: dotted 1.5px black;
+                background-color: beige;
+                color: black;
+                border-radius: 12px;
+                margin-left: 40%;
+                margin-top: 10%;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="button" value="Click to set paragraph background color" onclick="set_background()">
+        <div class="container">
+            <p id="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem culpa iure iusto at. Vero, aliquid corrupti maiores culpa cumque, voluptatem asperiores ex doloremque nobis placeat eum saepe veniam atque omnis!</p>
+        </div>
+        <script>
+            function set_background()
+            {
+                y=document.querySelector(".container")
+                y.style.background="beige";
+            }
+        </script>
+    </body>
+</html>

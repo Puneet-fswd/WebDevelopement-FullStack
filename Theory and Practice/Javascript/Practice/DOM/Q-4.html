@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Question-4 | Solution</title>
+        <style>
+            *
+            {
+                font-family: cursive;
+            }
+            button
+            {
+                margin-top: 13px;
+                margin: 10px;
+                border:double 4px rgb(94, 10, 10);
+                background-color: bisque;
+                padding: 10px;
+                font-weight: 700;
+            }
+            button :hover
+            {
+                cursor: pointer;
+            }
+            h2
+            {
+                border:double 4px rgb(94, 10, 10);
+                background-color: bisque;
+                padding: 10px;
+                margin: 10px;
+            }
+            a
+            {
+                text-decoration: none;
+                color: black;
+            }
+            a:hover
+            {
+                color: rgb(94, 10, 10);
+            }
+            .container
+            {
+                display: flex;
+                justify-content: center;
+                text-justify: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2><a id="w3r" href="https://www.w3resource.com/" target="self" hreflang="en-us" type="text/html">W3 Resource</a></h2>
+            <button onclick="changes()">Click here to get the attributes regarding this page</button>
+        </div>
+        <script>
+            function changes()
+            {
+                var u = document.querySelector("#w3r").href;
+                alert('The value of the href attribute of the link is : '+u);
+                var v = document.querySelector("w3r").hreflang;   
+                alert('The value of the hreflang attribute of the link is : '+v);
+                var x = document.querySelector("w3r").target; 
+                alert('The value of the taget attribute of the link is : '+x);
+                var y = document.querySelector("w3r").type; 
+                alert('The value of the type attribute of the link is : '+y);
+            }
+        </script>
+    </body>
+</html>

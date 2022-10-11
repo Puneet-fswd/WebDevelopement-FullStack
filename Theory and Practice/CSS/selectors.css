@@ -1,0 +1,86 @@
+/* SELECTORS IN CSS */
+
+/* Element Selector */
+h3
+{
+    color: rgb(112, 13, 13);
+}
+
+/* Anchor Selector */
+a
+{
+    color: rgb(112, 13, 13);
+}
+
+/* Multiple Selector-Selctor for giving same command to multiple things */
+h3,a
+{
+    color: rgb(112, 13, 13);
+}
+
+/* Class Selector- selection of a class. If there are multiple classes of same name and to selct any one use location.classname ex)span.favourite*/
+.nature
+{
+    color: yellow;
+    background-color: black;
+    padding: 5px;
+}
+
+
+body p+p.nature
+{
+    color: yellow;
+    background-color: black;
+    padding: 5px;
+}
+
+body h3+p.nature
+{
+    color: yellow;
+    background-color: black;
+    padding: 5px;
+}
+
+/* Descendant Combinator- Implements command on all <em>/<b>/<i> inside <li> */
+li em
+{
+    font-style: italic;
+}
+
+/* Adjacent Combinator- Implements command on the immidiate <p> after <h3> */
+h3+p
+{
+    font-style: italic;
+}
+p+p
+{
+    font-style: italic;
+}
+
+/* Pseudo Class Selector- A pseudo-class is used to define a special state of an element. For example, it can be used to: Style an element when a user mouses over it */
+a:hover
+{
+    color:rgb(72, 4, 84);
+    text-decoration: double;
+}
+
+/* ID Selector- Same as class selector. Only syntax is different. */
+h3#nature
+{
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+/* Attribute Selector- Selects the members of the list which have any class mentioned. To select a specific class use li[class="class name"] */
+li[class]
+{
+    color: pink;
+    background-color: black;
+    padding: 5px;
+}
+
+/* Universal selector- Selects each and every element of the code and implements the change */
+
+
+    

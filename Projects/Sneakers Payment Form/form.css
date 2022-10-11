@@ -1,0 +1,150 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px;
+    padding: 8px;
+}
+body:hover
+{
+    border-color: lightskyblue;
+}
+.container
+{
+    background-color: rgb(39, 38, 38);
+    padding: 10px 20px 10px 20px;
+    border: 5px solid black;
+    border-color: #ffff;
+    border-radius: 10px; 
+}
+input[type="text"],input[type="email"],input[type="number"],input[type="date"],input[type="password"],select, textarea
+{
+    color: black;
+    width: 100%;
+    padding: 12px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+fieldset
+{
+    border: 2px solid black;
+    border-radius: 8px;
+    border-color: rgba(238, 161, 139, 0.904);
+    color: rgba(238, 161, 139, 0.904);
+}
+input[type="submit"]
+{
+    padding: 10px;
+    border: 0.5px solid black;
+    border-radius: 8px;
+    color: white;
+    width: 100%;
+    background-color: rgb(201, 8, 8);
+    cursor: grab;
+}
+.title
+{
+    text-align: center;
+}
+.contain
+{
+    background-color: white;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    width: 100%;
+    color:aliceblue;
+    border-radius: 10px;
+    background-image: url("backgrnd.jpg");
+    font-size: large;   
+    background-repeat: repeat-x;
+}
+p
+{
+    color: rgba(238, 161, 139, 0.904);
+}
+.heading1,.heading2
+{
+    color: rgba(238, 161, 139, 0.904);
+}
+footer
+{
+    text-align: center;
+    font-size: 80%;
+    color: red;
+}
+.contain1
+{
+    width: 60%;
+    margin: 4px;
+    background-color: rgb(39, 38, 38);
+    padding: 10px 20px 10px 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.contain2
+{
+    width: 40%;
+    margin: 4px;
+    background-color: rgb(39, 38, 38);
+    padding: 10px 20px 10px 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+@media all and (max-width: 600px) and (orientation: landscape)
+{
+    .heading1
+    {
+        color: white;
+    }
+    .heading2
+    {
+        color: white;
+    }
+}
+.container
+{
+    display: flex;
+}
+.logo
+{
+    border: 2px solid red;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#move
+{
+    padding-top: 10px;
+    animation: move 4s infinite;
+}
+@keyframes move 
+{
+    50% {border-color: red;} 
+}
+#move1
+{
+    animation: move1 4s infinite;
+}
+@keyframes move1 
+{
+    50% {border-color: red;} 
+}
+#move2
+{
+    animation: move2 4s infinite;
+}
+@keyframes move2 
+{
+    50% {border-color: red;} 
+}
+pay:hover
+{
+    background-color: black;
+    cursor: help;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Question-12 | Solution</title>
+        <style>
+            a
+            {
+                color: black;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+            a:hover
+            {
+                color: brown;
+            }
+        </style>
+    </head>
+    <body>
+        <h1><a href="#" onMouseOver="highlight()" onMouseOut="return_normal()">Hover here to highlight important words</a></h1>
+        <p>Lorem ipsum dolor sit, amet <strong>consectetur</strong> adipisicing elit. Fugiat <strong>repellendus</strong> eius soluta hic numquam adipisci nesciunt ad debitis sapiente <strong>doloribus</strong>. Minima explicabo, animi qui odit aliquid accusamus. <strong>Modi</strong> officiis adipisci, dignissimos <strong>laboriosam</strong> id illo omnis blanditiis non voluptas quos fugiat magni, esse tempora alias atque deserunt  nam, corporis amet?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione totam nostrum doloribus voluptatibus natus iusto a modi, ex <strong>consequatur</strong> est eligendi ut debitis corrupti eos facere molestiae <strong>necessitatibus</strong> nulla quisquam eveniet ipsam harum magnam dolores iste? Sit officia vitae eius laudantium tempora impedit? Eveniet ratione quia sit rem doloribus, <strong>libero</strong> eum quaerat? Ipsum quidem <strong>exercitationem</strong> atque voluptate esse repellat deserunt iusto molestiae! Consequatur maxime tempore dignissimos quisquam. Fuga, quisquam. Consequatur dicta sequi, officia necessitatibus amet <strong>exercitationem</strong> quae voluptate id sunt, cupiditate officiis temporibus aliquam magni. Quidem architecto nesciunt in consectetur, distinctio totam, quaerat eaque veritatis rem tenetur labore similique. Lorem ipsum dolor, sit amet <strong>consectetur</strong> adipisicing elit. Sit, error sequi? Sed <strong>exercitationem</strong> quia, sequi ipsam dolores eum laudantium dolor quas iste doloribus quibusdam illo et recusandae, magnam quidem. Deleniti temporibus quo error sunt facere. Ipsa ipsum voluptate voluptas. Omnis, harum quam tempora atque odit dignissimos corporis <strong>praesentium</strong>. Labore a magni laboriosam non minima distinctio? Cum atque culpa quos sequi? Nemo eos dolores obcaecati eveniet! Quo inventore hic sit ex reprehenderit <strong>necessitatibus</strong> explicabo nam officia impedit. Iusto facere cum architecto minima assumenda eius placeat suscipit at, earum cumque nesciunt officia qui distinctio temporibus <strong>praesentium</strong> enim autem, odit quasi repellat ullam! Ad assumenda voluptatem enim sunt alias, repudiandae consectetur ratione commodi, fugit <strong>tempore</strong> accusantium odio inventore dignissimos doloribus labore? Repellat minus ullam est quisquam consectetur dolor id, aut ipsa, earum nobis error fugiat at rem magni dolorem veritatis, accusantium pariatur voluptate dignissimos mollitia. <strong>Reprehenderit</strong> exercitationem maxime asperiores quo, aut perferendis recusandae sint, harum ipsum non iure fugit voluptates officiis? Dolor ducimus facilis molestiae, ipsum blanditiis, quisquam numquam explicabo officia totam reiciendis soluta aliquid commodi modi <strong>praesentium</strong> voluptatem, fuga nostrum perspiciatis nam <strong>Veritatis!</strong> nesciunt voluptate repudiandae suscipit totam quibusdam non provident? Odit dolorem a, nesciunt inventore fuga cum enim dolorum maiores similique sint minima amet deleniti numquam dolore ex magnam repellendus officia corporis accusantium ipsum. Excepturi, <strong>dignissimos</strong> nostrum fugit laboriosam, dolores illum, voluptates mollitia dicta natus ea possimus accusantium? Aliquid inventore magni quod labore? Cumque <strong>reiciendis</strong> ullam, autem mollitia at <strong>voluptatibus</strong>laboriosam nemo, amet atque accusamus sint omnis aspernatur facilis vero.
+        </p>
+        <script>
+            var bold_Items;
+            window.onload=getBold_items();
+            //get a list of bold items
+            function getBold_items()
+            {
+                bold_Items=document.getElementsByTagName('strong');
+            }
+            //highlight the bold text
+            function highlight()
+            {
+                for(var i=0;i<bold_Items.length;i++)
+                {
+                    bold_Items[i].style.color="brown";
+                }
+            }
+            //after hover return the original text
+            function return_normal()
+            {
+                {
+                    for (var i=0; i<bold_Items.length; i++) 
+                    {
+                        bold_Items[i].style.color = "black";
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

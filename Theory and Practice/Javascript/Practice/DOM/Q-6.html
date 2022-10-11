@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Question-6 | Solution</title>
+    </head>
+    <body>
+        <table id="myTable" border="1">
+            <tr>
+                <td>Row1 cell1</td>
+                <td>Row1 cell2</td>
+            </tr>
+            <tr>
+                <td>Row2 cell1</td>
+                <td>Row2 cell2</td>
+            </tr>
+            <tr>
+                <td>Row3 cell1</td>
+                <td>Row3 cell2</td>
+            </tr>
+        </table>
+        <form>
+            <input type="button" onclick="changeContent()" value="Change content">
+        </form>
+        <script>
+            function changeContent()
+            {
+                rn=window.prompt("Please enter the row number", 0);
+                cn=window.prompt("Please enter the column number", 0);
+                content=window.prompt("Enter the desired content");
+                var x=document.getElementById('myTable').rows[parseInt(rn, 10)].cells;
+                x[parseInt(cn, 10)].innerHTML=content;
+            }
+        </script>
+    </body>
+</html>

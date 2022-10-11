@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Question-1 | Solution</title>
+        <style>
+            *
+            {
+                font-size: larger;
+                font-family: cursive;
+            }
+            button
+            {
+                border: double 4px beige;
+                background-color: brown;
+                color: beige;
+                padding: 30px;
+                margin: 30px;
+                border-radius: 30%;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="btn_1" onclick="input_nums();">Click here to get numbers</button>
+        <script>
+            function input_nums(num1,num2)
+            {
+                num1=prompt("Please enter first number");
+                num2=prompt("Please enter second number");
+                if(num1>num2)
+                {
+                    document.getElementById('btn_1').innerHTML=num1;
+                }
+                else if(num1<num2)
+                {
+                    document.getElementById('btn_1').innerHTML=num2;
+                }
+                else
+                {
+                    document.getElementById('btn_1').innerHTML="Shit! Numbers are equal";
+                }
+            }
+        </script>
+    </body>
+</html>

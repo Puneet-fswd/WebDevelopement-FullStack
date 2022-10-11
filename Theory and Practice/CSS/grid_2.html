@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Layout Grid</title>
+        <style>
+            body
+            {
+                background-color: rgb(243, 218, 185);
+            }
+            .container
+            {
+                display: grid;
+                grid-template-columns: 1fr 4fr 1fr;
+                grid-template-rows: 1fr 6fr 1fr;
+                height: 625px;
+                grid-gap: 10px;
+            }
+            .child
+            {
+                border-bottom-right-radius: 15px;
+                border-top-left-radius: 15px;
+                background-color: rgb(88, 32, 5);
+                box-shadow:2px 5px 4px rgba(128, 128, 128, 0.542);
+                color: rgb(243, 218, 185);
+                font-size: 20px;
+            }
+            #item-1
+            {
+                padding: 50%;
+                grid-row-start: 1;
+                grid-row-end: 4;
+                text-align: center;
+            }
+            #item-2
+            {
+                padding: 5%;
+                grid-column-start: 2;
+                grid-column-end: 4;
+                text-align: center;
+            }
+            #item-3
+            {
+                padding: 5%;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                text-align: center;
+            }
+            #item-4
+            {
+                padding: 5%;
+                text-align: center;
+            }
+            #item-5
+            {
+                padding: 5%;
+                grid-column-start: 2;
+                grid-column-end: 4;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="child" id="item-1">Nav</div>
+            <div class="child" id="item-2">Header</div>
+            <div class="child" id="item-3">Article</div>
+            <div class="child" id="item-4">ads</div>
+            <div class="child" id="item-5">Footer</div>
+        </div>
+    </body>
+</html>
+

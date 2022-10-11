@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Async/Await in Promises</title>
+    </head>
+    <body>
+        <script>
+            async function puneet()
+            {
+                let delhi_weather = new Promise((resolve, reject)=>
+                {
+                    setTimeout(()=>
+                    {
+                        resolve("27 deg");
+                    }, 3000)
+                })
+                let mumbai_weather = new Promise((resolve, reject)=>
+                {
+                    setTimeout(()=>
+                    {
+                        resolve("21 deg");
+                    }, 8000)
+                })
+                //traditional method
+                delhi_weather.then(alert);
+                mumbai_weather.then(alert);
+                //new method
+                let delhi = await delhi_weather;
+                let mumbai = await mumbai_weather;
+                return[delhi, mumbai];
+            }
+            console.log("Welcome to weather control room");
+            let a = puneet();
+            console.log(a);
+        </script>
+    </body>
+</html>

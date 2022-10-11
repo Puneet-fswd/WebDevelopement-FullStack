@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Question-13 | Solution</title>
+        <style>
+            *
+            {
+                background-color: black;
+                font-family: cursive;
+            }
+            #box
+            {
+                border: solid 1px rgba(205, 235, 10, 0.852);
+                box-shadow: rgba(205, 235, 10, 0.557) 0px 54px 55px, rgba(205, 235, 10, 0.557) 0px -12px 30px, rgba(205, 235, 10, 0.557) 0px 4px 6px, rgba(205, 235, 10, 0.557) 0px 12px 13px, rgba(205, 235, 10, 0.557) 0px -3px 5px;
+                padding: 30px;
+                color: white;
+                border-radius: 20px;
+                width: 40vw;
+                margin: auto;
+                margin-top: 20vw;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body onload="getSize()" onresize="getSize()">
+        <div id="box"> 
+        <!-- Place height and width size here! --> 
+        </div>
+        <script>
+            function getSize()
+            {
+                var w = document.documentElement.clientWidth;
+                var h = document.documentElement.clientHeight;
+                document.getElementById('box').innerHTML = "Width: " + w +"  " + "  Height: "+h;
+            }
+        </script>
+    </body>
+</html>

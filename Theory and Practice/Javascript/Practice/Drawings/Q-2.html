@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Question-2 | Solution</title>
+    </head>
+    <body onload="draw();">
+        <canvas id="circle" width="150" height="150"></canvas>
+        <script>
+            //Circle
+            function draw()
+            {
+                var canvas=document.getElementsById('circle');
+                if(canvas.getContext)
+                {
+                    var ctx=canvas.getContext('2d');
+                    var X=canvas.width/2;
+                    var Y=canvas.height/2;
+                    var R=45;
+                    ctx.beginPath();
+                    ctx.arc(X, Y, R, 0, 2*Math.PI, false);
+                    ctx.lineWidth=3;
+                    ctx.strokeStyle='#FF0000';
+                    ctx.stroke();
+                }
+            }
+        </script>
+    </body>
+</html>

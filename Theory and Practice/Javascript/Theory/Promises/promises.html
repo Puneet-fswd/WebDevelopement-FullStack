@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Promises in JS</title>
+    </head>
+    <body>
+        <h1>Promises in JS</h1>
+        <script>
+            const password="hello";
+            let a=prompt("Please enter the password");
+            let b=new Error("There is an error 404");
+            let promise_1=new Promise(function(resolve, reject)
+            {
+                setTimeout(()=>
+                {
+                    if(a=="hello")
+                {
+                    alert('Hello World');
+                    resolve(true);
+                    console.log("Promise is fulfilled");
+                }
+                }, 5000)
+            })
+            let promise_2=new Promise(function(resolve, reject)
+            {
+                alert("Please try again later");
+                reject(false);
+                console.log(b);
+            })
+            console.log(promise_1);
+            promise_1.then((value)=>{console.log(value)}, (ErrorSolved)=>{console.log("No error")});
+            promise_2.catch((ErrorSolved)=>{console.log(b+" "+"has been resolved")});
+            console.log(promise_2);
+        </script>
+    </body>
+</html>

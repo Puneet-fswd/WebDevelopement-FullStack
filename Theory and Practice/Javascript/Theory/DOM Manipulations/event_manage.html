@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Event Management</title>
+        <style>
+            button
+            {
+                background-color: black;
+                color: beige;
+                border-radius: 10px;
+                padding: 20px;
+                margin: 10px;
+                font-size: large;
+                font-weight: 600;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            div
+            {
+                display: flex;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <button id="btn">Click Here</button>
+        </div>
+        <script>
+            let x=function(event){alert("Hello Mars")};
+            btn.addEventListener('click', x);
+            let y=function(event){alert("Hello Jupitor")};
+            btn.addEventListener('click', y);
+            let a=prompt("What is your favourite number between 1 and 2");
+            if(a==2)
+            {
+                btn.removeEventListener('click', x);
+            }
+            else
+            {
+                btn.removeEventListener('click', y);
+            }
+            console.log(event);    //lists all attributes related to the function such as return type, coordinates etc.
+        </script>
+    </body>
+</html>

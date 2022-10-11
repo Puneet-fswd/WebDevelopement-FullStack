@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Question-2 | Solution</title>
+    </head>
+    <body>
+        <script>
+            //Method-1
+            let a = [1, 2, 3, 4];
+            let y = [...a];
+            console.log(y);
+
+            //Method-2
+            var array_Clone = arr=>arr.slice(0);
+            console.log(array_Clone([1, 2, 4, 0]));
+
+            //Method-3
+            let x = [234, 'vbn', 345];
+            let z = Array.from(x);
+            console.log(z);
+
+            //Method-4
+            let b = [1, 2, 3, 4];
+            console.log("Original array:");
+            console.log(x);
+            let c = b.map(i => i);
+            console.log("Clone of the said array:");
+            console.log(c);
+
+            //Method-5
+            let d = [1, 2, 3, 4];
+            console.log("Original array:")
+            console.log(x)
+            let e = d.filter(() => true);
+            console.log("Clone of the said array:")
+            console.log(e);
+        </script>
+    </body>
+</html>

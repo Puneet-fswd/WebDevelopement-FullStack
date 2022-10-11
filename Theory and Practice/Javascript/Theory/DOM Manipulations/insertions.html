@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Insetions</title>
+    </head>
+    <body>
+        <h1 id="rmv">Insertion Methods in JS</h1>
+        <div class="container">
+            <div id="first"><h2>I am the first element</h2></div>
+        </div>
+        <script>            
+            let a=document.getElementsByTagName('div')[0];
+            a.innerHTML=a.innerHTML+'<h1>Hello Once Again!</h1>';
+
+            //some more methods
+            first.insertAdjacentHTML('beforebegin','<div class="testing"><h1>Hello World 1</h1></div>');
+            first.insertAdjacentHTML('beforeend','<div class="testing"><h1>Hello World 2</h1></div>');
+            first.insertAdjacentHTML('afterbegin','<div class="testing"><h1>Hello World 3</h1></div>');
+            first.insertAdjacentHTML('afterend','<div class="testing"><h1>Hello World 4</h1></div>');
+            rmv.remove();   //node.remove();
+
+            //other tags: .insertAdjacentElement()
+        </script>
+    </body>
+</html>

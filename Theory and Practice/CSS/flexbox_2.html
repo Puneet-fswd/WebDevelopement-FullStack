@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flexbox</title>
+    </head>
+    <style>
+    .flexcontainer1
+    {
+        display:flex;
+    }
+    .flexitems1
+    {
+        height:260px;
+        width:420px;
+        border: 2px solid navy;
+        border-radius:12px;
+        align-items: center;
+        margin:3px;
+    }
+    #flexitem1
+    {
+        background-color:rgb(1, 15, 15);
+    }
+    #flexitem2
+    {
+        background-color: rgb(62, 59, 57);
+    }
+    #flexitem3
+    {
+        background-color: rgb(86, 90, 92);
+    }
+    .flexcontainer2
+    {
+        display:flex;
+    }
+    .flexitems2
+    {
+        height:60px;
+        width:320px;
+        border:2px solid navy;
+        border-radius:12px;
+        margin:3px;
+        align-items:center;
+    }
+    #first-item
+    {
+        background-color:rgb(235, 205, 159);
+    }
+    #second-item
+    {
+        background-color: rgb(220, 170, 96);
+    }
+    #third-item
+    {
+        background-color: rgb(190, 136, 20);
+    }
+    #fourth-item
+    {
+        background-color: rgb(109, 77, 8);
+    }
+    .flexcontainer3
+    {
+        display:flex;
+    }
+    .flexitems3
+    {
+        height:60px;
+        width:320px;
+        border: 2px solid navy;
+        border-radius:12px;
+        margin:3px;
+        align-items:center;
+        text-align:center;
+    }
+    #item1
+    {
+        background-color:rgb(198, 152, 223);
+    }
+    #item2
+    {
+        background-color:rgb(165, 73, 205);
+    }
+    #item3
+    {
+        background-color:rgb(184, 11, 236);
+    }
+    #item4
+    {
+        background-color:rgb(81, 29, 109);
+    }
+    #item5
+    {
+        background-color:rgb(68, 8, 86);
+    }
+    .subcontainer1
+    {
+        display:flex;
+    }
+    .subcontaineritems1
+    {
+        height:120px;
+        width:140px;
+        border:2px solid black;
+        border-radius:8px;
+        margin:2px;
+    }
+    #subitem1
+    {
+        background-color: rgb(138, 134, 194);
+    }
+    #subitem2
+    {
+        background-color:rgb(70, 56, 146);
+    }
+    #subitem3
+    {
+        background-color:rgb(5, 7, 94)
+    }
+    .subcontainer2
+    {
+        display: flex;
+    }
+    .subcontaineritems2
+    {
+        height:40px;
+        width:100px;
+        border: 2px solid black;
+        border-radius:8px;
+        margin:2px;
+        align-items:center;
+    }
+    #sub-item-1
+    {
+        background-color: rgb(90, 10, 10);
+    }
+    #sub-item-2
+    {
+        background: rgb(173, 12, 12);
+    }
+    #sub-item-3
+    {
+        background-color:rgb(198, 70, 70);
+    }
+    #sub-item-4
+    {
+        background-color: rgb(196, 131, 131);
+    }
+    .subcontainer3
+    {
+        display:flex;
+    }
+    .subcontaineritems3
+    {
+        height:40px;
+        width:100px;
+        border:2px solid black;
+        border-radius:8px;
+        margin:2px;
+    }
+    #firstsub
+    {
+        background-color: rgb(119, 199, 117);
+    }
+    #secondsub
+    {
+        background-color: rgb(55, 173, 61);
+    }
+    #thirdsub
+    {
+        background-color: rgb(44, 155, 22);
+    }
+    #fourthsub
+    {
+        background-color: rgb(6, 82, 17);
+    }
+    #fifthsub
+    {
+        background-color: rgb(1, 41, 1);
+    }
+    #flexitems2
+    {
+        background-color: rgb(56, 50, 50);
+    }
+    #flexitems3
+    {
+        background-color: rgb(109, 104, 104);
+    }
+    </style>
+    <body>
+        <div class="flexcontainer1">
+          <div class="flexitems1" id="flexitem1">
+            First
+            <div class="subcontainer1">
+              <div class="subcontaineritems1" id="subitem1"></div>
+              <div class="subcontaineritems1" id="subitem2"></div>
+              <div class="subcontaineritems1" id="subitem3"></div>
+            </div>
+            <div class="subcontainer2">
+              <div class="subcontaineritems2" id="sub-item-1"></div>
+              <div class="subcontaineritems2" id="sub-item-2"></div>
+              <div class="subcontaineritems2" id="sub-item-3"></div>
+              <div class="subcontaineritems2" id="sub-item-4"></div>
+            </div>
+            <div class="subcontainer3">
+              <div class="subcontaineritems3" id="firstsub"></div>
+              <div class="subcontaineritems3" id="secondsub"></div>
+              <div class="subcontaineritems3" id="thirdsub"></div>
+              <div class="subcontaineritems3" id="fourthsub"></div>
+              <div class="subcontaineritems3" id="fifthsub"></div>
+            </div>
+        </div>
+          <div class="flexitems1" id="flexitem2"></div>
+          <div class="flexitems1" id="flexitem3"></div>
+        </div>
+        <div class="flexcontainer2">
+          <div class="flexitems2" id="first-item"></div>
+          <div class="flexitems2" id="second-item"></div>
+          <div class="flexitems2" id="third-item"></div>
+          <div class="flexitems2" id="fourth-item"></div>
+        </div>
+        <div class="flexcontainer3">
+          <div class="flexitems3" id="item1"></div>
+          <div class="flexitems3" id="item2"></div>
+          <div class="flexitems3" id="item3"></div>
+          <div class="flexitems3" id="item4"></div>
+          <div class="flexitems3" id="item5"></div>
+        </div>
+    </body>
+</html>

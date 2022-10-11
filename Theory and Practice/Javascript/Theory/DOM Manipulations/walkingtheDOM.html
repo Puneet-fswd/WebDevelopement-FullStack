@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Walking the DOM</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1>Walking the DOM</h1>
+        <h3>FRUITS</h3>
+            <ul>
+                <li class="fruit1"><b>Banana</b></li><br>
+                <li class="fruit2"><b>Mango</b></li><br>
+                <li class="fruit3"><b>Orange</b></li><br>
+                <li class="fruit4"><b>Muskmelon</b></li><br>
+            </ul>
+        <h3>Table from Bootstrap</h3>
+        <div class="conatiner">
+          <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+        <script>
+            //Accessing the children of a body or a head
+            console.log(document.body.firstChild);
+            console.log(document.body.lastChild);
+            console.log(document.body.childNodes);
+            console.log(document.body.hasChildNodes);
+
+            //Accessing siblings or parents of body
+            console.log(document.body.lastChild);
+            let a=document.body.lastChild;
+            console.log(a.parentNode);
+            console.log(a.parentElement);
+
+            //Element only navigation: used to not consider spaces and comments as nodes
+            console.log(document.body.firstElementChild);
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    </body>
+</html> 

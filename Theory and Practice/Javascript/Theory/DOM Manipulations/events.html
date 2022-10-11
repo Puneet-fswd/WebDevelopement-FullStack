@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Event Management</title>
+        <style>
+            button
+            {
+                background-color: black;
+                color: beige;
+                border-radius: 10px;
+                padding: 20px;
+                margin: 10px;
+                font-size: large;
+                font-weight: 600;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            h1
+            {
+                border-radius: 10px;
+                border: 2px solid black;
+                text-align: center;
+                padding: 10px;
+                background-color: beige;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            div
+            {
+                display: flex;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 onmouseenter="console.log('Hello, I have entered')">Event Management</h1>
+        <div>
+            <button onclick="alert('Hello World!')"; let a=6; console.log(a*a) id="button">Click Here</button>     
+            <!--multiple events can be carried out in onclick and other functions-->
+            <button id="btn">Click Here</button>
+        </div>
+        <script>
+            //other methods to handle events
+            let a=document.getElementsByClassName("btn")[0];
+            a.onclick=()=>
+            {
+                let b=document.getElementsByClassName("btn")[0];
+                b.innerHTML="Hello World!";
+            }
+        </script>
+    </body>
+</html>

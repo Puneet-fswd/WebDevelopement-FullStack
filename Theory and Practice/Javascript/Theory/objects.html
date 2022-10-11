@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Objects in JS</title>
+    </head>
+    <body>
+        <script>
+            let person=
+            {
+                name: 'Puneet',
+                age: '18',
+                "person hobbies": ['coding', 'sleeping', 'eating']
+            };
+            // console.log(person.person hobbies); => shows error
+            console.log(person["person hobbies"]);      //rectified by brackets
+            //loops in object-1
+            for(let key in person)
+            {
+                console.log(key);
+            }
+            //loops in object-2
+            console.log(object.keys(person));
+        </script>
+    </body>
+</html>

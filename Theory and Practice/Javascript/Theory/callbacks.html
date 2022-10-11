@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Callbacks in JS</title>
+    </head>
+    <body>
+        <h1>Callbacks in JS</h1>
+        <script>
+            function loadScript(src, callback)
+            {
+                var script=document.createElement("script");
+                script.src=src;
+                script.onload=function()
+                {
+                    console.log("Script has been loaded with src: "+src);
+                    callback(null, src);
+                }
+                script.onerror=function()
+                {
+                    console.log("Error has been loaded with src: "+src);
+                    callback(new Error("src:"+" "+src+" "+"has got some error"));
+                }
+                document.body.appendChild(script);
+            } 
+            function greet(error, src)
+            {
+                if(error)
+                {
+                    console.log(error);
+                    return;
+                }
+                alert('Good Morning Buddy!'+'  '+src);
+            }
+            loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js", greet);
+        </script>
+    </body>
+</html>

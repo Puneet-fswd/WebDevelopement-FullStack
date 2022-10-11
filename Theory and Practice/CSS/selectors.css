@@ -15,7 +15,7 @@ a
 /* Multiple Selector-Selctor for giving same command to multiple things */
 h3,a
 {
-    color: rgb(112, 13, 13);
+    color: rgb(110, 11, 11);
 }
 
 /* Class Selector- selection of a class. If there are multiple classes of same name and to selct any one use location.classname ex)span.favourite*/

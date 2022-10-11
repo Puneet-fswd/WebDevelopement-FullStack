@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+            const errorHandling = ()=>
+            {
+                try 
+                {
+                    let a = 0;
+                    console.log("Program ran successfully");
+                    return;     //This return does not affect the functionality of finally
+                }
+                catch(error)
+                {
+                    console.log("This is an error");
+                    console.log(c);
+                }
+                finally
+                {
+                    console.log("I ran irrespective of an error- that's why I am used");
+                    // finally is used if we want to run everytime irrespective of error in try/catch. if there is an error in the catch part then the code execution stops. Used for cleanups
+                }
+            }
+        </script>
+    </body>
+</html>

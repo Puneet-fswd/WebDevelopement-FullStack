@@ -11,14 +11,14 @@
         <script>
             function loadScript(src, callback)
             {
-                var script=document.createElement("script");
-                script.src=src;
-                script.onload=function()
+                var script = document.createElement("script");
+                script.src = src;
+                script.onload = function()
                 {
                     console.log("Script has been loaded with src: "+src);
                     callback(null, src);
                 }
-                script.onerror=function()
+                script.onerror = function()
                 {
                     console.log("Error has been loaded with src: "+src);
                     callback(new Error("src:"+" "+src+" "+"has got some error"));

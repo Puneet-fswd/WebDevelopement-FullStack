@@ -14,7 +14,7 @@ header
     padding: 50px;
     background-color: #ffffff;
     text-align: center;
-    background-image: url("/Fingertips/Pictures/banner.png");
+    background-image: url("/Projects/Fingertips/Pictures/banner.png");
     background-size: 1000px;
     background-repeat: no-repeat;  
     background-position: 55%;
@@ -44,16 +44,22 @@ nav
 {
     background: linear-gradient(45deg, rgba(36,0,0,1) 0%, rgba(84,8,8,1) 10%, rgb(114, 5, 5) 20%, rgb(130, 6, 6) 30%, rgba(150,9,9,1) 40%, rgba(175,6,6,1) 50%, rgb(193, 16, 16) 60%, rgb(189, 26, 26) 70%, rgb(206, 25, 25) 80%, rgb(219, 54, 54) 90%, rgb(220, 85, 80) 100%);
     overflow: hidden;
-    display: flex;
+    width: 100%;
+    display: block;
+    position: sticky;
+    top: 0;
 }
 nav a
 {
     padding: 20px;
-    float: left;
     color: blanchedalmond;
     text-decoration: none;
     font-size: 17px;
     font-family: 'malgun gothic', 'Franklin Gothic Medium', 'Arial Narrow', 'Arial' ;
+}
+#seperate
+{
+    float: right;
 }
 a:hover
 {
@@ -159,7 +165,7 @@ button:hover
     margin: 45px 10px 10px 10px;
     border: 1.5px solid maroon;
     border-radius: 12px;
-} 
+}
 .foundertitle
 {
     padding: 10px 30px 10px 30px;
@@ -169,9 +175,9 @@ button:hover
     color: blanchedalmond;
     border-radius: 12px;
     border: 2px solid black;
-    margin-left: 42%;
+    margin-left: 40%;
     margin-top: 5%;
-    margin-bottom: 3%;
+    margin-bottom: 10px;
 }
 .center1
 {
@@ -222,6 +228,26 @@ section p
     color: maroon;
     font-family: 'malgun gothic', 'Franklin Gothic Medium', 'Arial Narrow', 'Arial';
     font-size: 90%;
+}
+.contain_prods
+{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+.dashed
+{
+    margin-top: 10px;
+}
+.contain_serv
+{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.dashed
+{
+    margin-top: 10px;
 }
 @media screen and (max-width: 700px)
 {

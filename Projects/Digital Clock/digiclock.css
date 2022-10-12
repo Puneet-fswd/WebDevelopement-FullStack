@@ -1,0 +1,46 @@
+.container
+{
+    margin-top: 100px;
+    display: inline;
+    box-sizing: border-box;
+    justify-content: center;
+}
+#date_format1
+{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(46,0,255,1) 71%);
+    border-radius: 15px;
+    border: 2px solid black;
+    padding: 25px;
+    width: 1000px;
+    text-align: center;
+    font-size: xx-large;
+    margin: auto;
+    margin-bottom: 3%;
+    color: beige;
+}
+#date_format2
+{
+    background: rgb(236,1,1);
+    background: linear-gradient(305deg, rgba(236,1,1,1) 0%, rgba(233,66,66,1) 35%, rgba(218,127,127,1) 71%);
+    border-radius: 15px;
+    padding: 25px;
+    width: 1000px;
+    font-size: xx-large;
+    text-align: center;
+    border: 2px solid black;
+    margin: auto;
+    margin-bottom: 3%;
+}
+#date_format3
+{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    border-radius: 15px;
+    padding: 25px;
+    width: 1000px;
+    font-size: xx-large;
+    text-align: center;
+    border: 2px solid black;
+    margin: auto;
+}

@@ -8,31 +8,31 @@
     </head>
     <body>
         <script>
-            let p1=new Promise((resolve, reject)=>
+            let p1 = new Promise((resolve, reject)=>
             {
                 setTimeout(()=>
                 {
                     resolve('First promise fullfilled');
                 }, Math.floor(Math.random(0,5))*1000)
             })
-            let p2=new Promise((resolve, reject)=>
+            let p2 = new Promise((resolve, reject)=>
             {
                 setTimeout(()=>
                 {
                     resolve('First promise fullfilled');
                 }, Math.floor(Math.random(0,8))*1000)
             })
-            let p3=new Promise((resolve, reject)=>
+            let p3 = new Promise((resolve, reject)=>
             {
                 setTimeout(()=>
                 {
                     resolve('First promise fullfilled');
                 }, Math.floor(Math.random(0,3))*1000)
             })
-            let promise_all=Promise.all([p1, p2, p3]);
-            let promise_allsettled=Promise.allSettled([p1, p2, p3]);
-            let promise_race=Promise.race([p1, p2, p3]);
-            let promise_any=Promise.any([p1, p2, p3]);
+            let promise_all = Promise.all([p1, p2, p3]);
+            let promise_allsettled = Promise.allSettled([p1, p2, p3]);
+            let promise_race = Promise.race([p1, p2, p3]);
+            let promise_any = Promise.any([p1, p2, p3]);
             promise_all.then((value)=>
             {
                 document.write(value);

@@ -10,13 +10,13 @@
         <h1>Promises in JS</h1>
         <script>
             const password="hello";
-            let a=prompt("Please enter the password");
-            let b=new Error("There is an error 404");
-            let promise_1=new Promise(function(resolve, reject)
+            let a = prompt("Please enter the password");
+            let b = new Error("There is an error 404");
+            let promise_1 = new Promise(function(resolve, reject)
             {
                 setTimeout(()=>
                 {
-                    if(a=="hello")
+                    if(a == "hello")
                     {
                         alert('Hello World');
                         resolve(true);
@@ -24,7 +24,7 @@
                     }
                 }, 5000)
             })
-            let promise_2=new Promise(function(resolve, reject)
+            let promise_2 = new Promise(function(resolve, reject)
             {
                 alert("Please try again later");
                 reject(false);

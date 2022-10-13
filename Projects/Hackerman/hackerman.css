@@ -1,0 +1,79 @@
+html, body 
+{
+    height: 100%;
+    width: 100%;
+}
+  
+body
+{
+    background: black;
+    font-family: 'IBM Plex Mono', monospace;
+    color: #12e212;
+}
+.card-header
+{
+    color: red;
+}
+.card-body1
+{
+    background-color: #f4f0f02e;
+}
+.padding
+{
+    padding: 2rem !important;
+}
+  
+.header-icon 
+{
+    font-size: 1.65rem;
+    margin-right: 0.625rem;
+    color: #8876c6;
+}
+
+.card 
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background: transparent;
+    background-clip: border-box;
+    border-radius: 0;
+    border:2px solid #12e212;
+}
+.card-header 
+{
+    display: flex;
+    align-items: center;
+    border-bottom-width: 1px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0.625rem;
+    height: 3.5rem;
+}
+.btn-actions-pane-right
+{
+    margin-left: auto;
+    white-space: nowrap;
+}
+.scroll-area-sm 
+{
+    height: 250px;
+    overflow-x: hidden;
+}
+.card-footer
+{
+    border-radius: 1px !important;
+}
+#info_gathered
+{
+    margin-left: 10px;
+}
+p
+{
+    margin: 0;
+    font-weight: 100;
+    line-height: 1.5;
+    text-align: left;
+}

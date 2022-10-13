@@ -34,7 +34,7 @@ setInterval(()=>
     {
         hrs = 12;
     }
-    if(hrs>12)
+    if(hrs<12)
     {
         ampm.innerHTML = "PM";
     }

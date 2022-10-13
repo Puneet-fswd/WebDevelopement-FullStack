@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+h1
+{
+    text-align: center;
+    color: white;
+    margin: 10px;
+}
+.container
+{
+    display: flex;
+}
+.contain_img
+{
+    height: 650px;
+    width: 100%;
+    background-image: url('https://miro.medium.com/max/1200/1*SwFB1o_k1LGprN-XRUZQ8w.jpeg');
+    background-repeat: no-repeat;
+    background-size: 1000px 650px;
+}
+.container_form
+{
+    height: 610px;
+    width: 30%;
+    margin-left: auto;
+    padding: 20px;
+    background-color: bisque;
+}
+#contain_form_elements
+{
+    margin-top: 35%;
+}
+#form
+{
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+#exampleInputEmail1
+{
+    width: 100%;
+    height: 20px;
+}
+#exampleInputPassword1
+{
+    width: 100%;
+    height: 20px;
+}
+.form-text
+{
+    font-size: 12px;
+}
+#btns
+{
+    display: flex;
+    justify-content: center;
+}
+.btn1
+{
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.btn2
+{
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+#line
+{
+    text-align: center;
+}
+#signup
+{
+    font-size: small;
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
+#signup:hover
+{
+    text-decoration: none;
+    color: rgb(244, 230, 230);
+}
+
+/* adding responsiveness */
+@media only screen and (max-width: 700px)
+{
+    form
+    {
+        font-size: smaller;
+    }
+    .container_form
+    {
+        width: 100%;
+    }
+    #btns
+    {
+        display: block;
+    }
+    .btn1
+    {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+    }
+    .btn2
+    {
+        margin-left: auto;
+    }
+}

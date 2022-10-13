@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="signup.css">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="Logo/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Logo/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Logo/favicon-16x16.png">
+        <title>Fingertips | Signup</title>
+    </head>
+    <body>
+        <div class="container" id="height">
+            <div class="contain_img"></div>
+            <div class="container_form" id="form">
+                <div id="contain_form_elements">
+                    <h2>Create an account</h2>
+                    <br>
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputName1" class="form-label">Full Name</label><br>
+                            <input type="name" class="form-control" id="exampleInputName1" aria-describedby="nameHelp">
+                        </div>
+                        <br>
+                        <div class="mb-3">
+                            <label for="exampleInputdob1" class="form-label">Date of Birth</label><br>
+                            <input type="date" class="form-control" id="exampleInputdob1" aria-describedby="dobHelp">
+                        </div>
+                        <br>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label><br>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">(We'll never share your email with anyone else)</div>
+                        </div>
+                        <br>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Create a strong password</label><br>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <br>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                        </div>
+                        <br>
+                        <div id="btns">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                        <br>
+                        <p id="line">Already have an account? <a href="login-form.html" id="login">Login</a></p>
+                    </form>
+                </div>
+            </div>    
+        </div> 
+        <!-- javascript -->
+        <script src="signup.js"></script>
+    </body>
+</html>

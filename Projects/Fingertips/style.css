@@ -1,23 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
 *
 {
     box-sizing: border-box;
     list-style: none;
 }
+#sitename
+{
+    color: beige;
+    text-align: center;
+    font-family: 'ABeeZee', sans-serif;
+    font-size: 90px;
+    font-stretch: extra-condensed;
+}
 body
 {
     margin: 0;
-    background-color: rgba(247, 231, 231, 0.97);
+    font-family: 'Poppins', sans-serif;
 }
 header 
 {
-    height: 215px;
+    height: 220px;
     padding: 50px;
-    background-color: #ffffff;
     text-align: center;
-    background-image: url("/Projects/Fingertips/Pictures/banner.png");
-    background-size: 1000px;
-    background-repeat: no-repeat;  
-    background-position: 55%;
+    /* background-image: url("/Projects/Fingertips/Pictures/banner.png"); */
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyz44UbhXaAwt33za2xvPwxVb7y9kncHEFhexSxb_s7AWgXzdAFOSfSgrUNWlbR0ScQuk&usqp=CAU');
+    /* background-size: 1000px; */
+    background-size: 340px;
+    background-repeat: repeat-x;  
 }
 #seperate
 {
@@ -38,7 +50,6 @@ footer a
     color: blanchedalmond;
     text-decoration: none;
     font-size: 17px;
-    font-family: 'malgun gothic', 'Franklin Gothic Medium', 'Arial Narrow', 'Arial';
 }
 nav
 {
@@ -46,8 +57,6 @@ nav
     overflow: hidden;
     width: 100%;
     display: block;
-    position: sticky;
-    top: 0;
 }
 nav a
 {
@@ -55,17 +64,16 @@ nav a
     color: blanchedalmond;
     text-decoration: none;
     font-size: 17px;
-    font-family: 'malgun gothic', 'Franklin Gothic Medium', 'Arial Narrow', 'Arial' ;
 }
 #seperate
 {
     float: right;
 }
-a:hover
+nav a:hover
 {
     cursor: pointer;
     color: black;
-    font-weight: bold;
+    font-weight: 500;
     background: linear-gradient(15deg, rgba(227,134,12,1) 0%, rgba(210,122,27,1) 20%, rgba(209,140,43,1) 40%, rgba(223,172,100,1) 60%, rgba(233,180,130,1) 80%, rgba(213,185,154,1) 100%);
     border: 1.5px solid black;
 }
@@ -74,10 +82,9 @@ section h2 span
     padding: 10px 30px 10px 30px;
     text-align: center;
     background: linear-gradient(214deg, rgba(36,0,0,1) 0%, rgba(84,8,8,1) 10%, rgba(132,6,6,1) 20%, rgba(155,9,9,1) 30%, rgba(179,9,9,1) 40%, rgba(204,6,6,1) 50%, rgba(221,26,26,1) 60%, rgba(206,60,60,1) 70%, rgba(211,69,69,1) 80%, rgba(235,90,90,1) 90%, rgba(244,109,109,1) 100%);
-    font-family: 'malgun gothic', 'Franklin Gothic Medium', 'Arial Narrow', 'Arial' ;
     color: blanchedalmond;
     border-radius: 12px;
-    border: 2px solid black;
+    border: 2px solid beige;
 }
 section h2
 {
@@ -85,18 +92,11 @@ section h2
     margin-top: 3%;
     margin-bottom: 3%;
 }
-.dashed
-{
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 4%;
-    margin-bottom: 4%;
-}
 .products
 {
     margin: 10px;
     border-radius: 12px;
-    border: 0px solid black;
+    border: 0px solid beige;
     text-align: center;
 }
 .center
@@ -107,31 +107,29 @@ section h2
     margin-right: auto;
     width: 265px;
     height: 200px;
-    border: 2px solid black;
+    border: 2px solid beige;
     border-radius: 12px;
 }
-button
+#btn
 {
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
     background: linear-gradient(214deg, rgba(36,0,0,1) 0%, rgba(84,8,8,1) 10%, rgba(132,6,6,1) 20%, rgba(155,9,9,1) 30%, rgba(179,9,9,1) 40%, rgba(204,6,6,1) 50%, rgba(221,26,26,1) 60%, rgba(206,60,60,1) 70%, rgba(211,69,69,1) 80%, rgba(235,90,90,1) 90%, rgba(244,109,109,1) 100%);
     color: blanchedalmond;
-    border: 2px solid black;
+    border: 0px solid;
     border-radius: 12px;
     font-weight: 600;
     font-size: large;
     padding: 15px 20px;
-    font-family: 'malgun gothic', 'Franklin Gothic Medium', 'Arial Narrow', 'Arial';
 }
-button:hover
+#btn:hover
 {
     cursor: pointer;
     color: black;
     font-weight: bold;
     background: linear-gradient(15deg, rgba(227,134,12,1) 0%, rgba(210,122,27,1) 20%, rgba(209,140,43,1) 40%, rgba(223,172,100,1) 60%, rgba(233,180,130,1) 80%, rgba(213,185,154,1) 100%);
-    border: 2px solid black;
 }
-.conatinprods
+.containprods
 {
     display: inline;
 }
@@ -141,18 +139,18 @@ button:hover
 }
 .carousel-cell 
 {
-    height: 295px;
+    height: 310px;
     width: 300px;
     margin-right: 30px;
-    border: 1.5px solid rgb(84, 82, 82);
-    border-radius: 12px;
-    background: rgb(203, 197, 197);
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyz44UbhXaAwt33za2xvPwxVb7y9kncHEFhexSxb_s7AWgXzdAFOSfSgrUNWlbR0ScQuk&usqp=CAU');
+    background-size: 0px;
+    background-repeat: no-repeat;
     counter-increment: carousel-cell;
-}  
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
 .carousel-cell.is-selected
 {
-    background: rgb(203, 197, 197);
-    border: 1.5px solid rgb(84, 82, 82);
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyz44UbhXaAwt33za2xvPwxVb7y9kncHEFhexSxb_s7AWgXzdAFOSfSgrUNWlbR0ScQuk&usqp=CAU');
 }
 .carousel-cell:before 
 {
@@ -162,8 +160,10 @@ button:hover
 }
 .founder
 {
+    color: beige;
+    font-weight: 400;
     margin: 45px 10px 10px 10px;
-    border: 1.5px solid maroon;
+    border: 3px solid beige;
     border-radius: 12px;
 }
 .foundertitle
@@ -171,13 +171,12 @@ button:hover
     padding: 10px 30px 10px 30px;
     text-align: center;
     background: linear-gradient(214deg, rgba(36,0,0,1) 0%, rgba(84,8,8,1) 10%, rgba(132,6,6,1) 20%, rgba(155,9,9,1) 30%, rgba(179,9,9,1) 40%, rgba(204,6,6,1) 50%, rgba(221,26,26,1) 60%, rgba(206,60,60,1) 70%, rgba(211,69,69,1) 80%, rgba(235,90,90,1) 90%, rgba(244,109,109,1) 100%);
-    font-family: 'malgun gothic', 'Franklin Gothic Medium', 'Arial Narrow', 'Arial' ;
     color: blanchedalmond;
     border-radius: 12px;
-    border: 2px solid black;
+    border: 2px solid beige;
     margin-left: 40%;
     margin-top: 5%;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 .center1
 {
@@ -185,14 +184,12 @@ button:hover
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid black;
+    border: 2px solid beige;
     border-radius: 47%;
 }
 section p
 {
     text-align: center;
-    font-family: 'malgun gothic', 'Franklin Gothic Medium', 'Arial Narrow', 'Arial';
-    font-weight: 700;
 }
 .social
 {
@@ -200,20 +197,22 @@ section p
 }
 #social1
 {
+    font-weight: 600;
     padding: 5px 5px 5px 5px;
-    border: 2px solid black;
+    border: 2px solid beige;
     border-radius: 12px;
     margin-right: 5px;
-    color: white;
+    color: beige;
     background-color: rgb(219, 18, 18);
 }
 #social2
 {
+    font-weight: 600;
     padding: 5px 5px 5px 5px;
-    border: 2px solid black;
+    border: 2px solid beige;
     border-radius: 12px;
     margin-left: 5px;
-    color: white;
+    color: beige;
     background: linear-gradient(231deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,203,69,1) 100%);
 }
 .vision
@@ -225,39 +224,39 @@ section p
 .condition
 {
     text-align: center;
-    color: maroon;
-    font-family: 'malgun gothic', 'Franklin Gothic Medium', 'Arial Narrow', 'Arial';
-    font-size: 90%;
+    color: beige;
+    font-size: 95%;
+    font-weight: 400;
 }
 .contain_prods
 {
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-}
-.dashed
-{
-    margin-top: 10px;
+    margin-top: 5%;
 }
 .contain_serv
 {
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
+    margin-top: 5%;
 }
-.dashed
+#bg
 {
-    margin-top: 10px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyz44UbhXaAwt33za2xvPwxVb7y9kncHEFhexSxb_s7AWgXzdAFOSfSgrUNWlbR0ScQuk&usqp=CAU');
+    background-repeat: repeat-x repeat-y;
+    background-size: 340px;
 }
-@media screen and (max-width: 700px)
+footer a:hover
+{
+    cursor: pointer;
+    color: black;
+    font-weight: 500;
+    background: linear-gradient(15deg, rgba(227,134,12,1) 0%, rgba(210,122,27,1) 20%, rgba(209,140,43,1) 40%, rgba(223,172,100,1) 60%, rgba(233,180,130,1) 80%, rgba(213,185,154,1) 100%);
+    border: 1.5px solid black;
+}
+
+/* adding responsiveness */
+@media only screen and (max-width: 800px)
 {
     .nav
     {
         flex-direction: column;
-    }
-    #seperate
-    {
-        margin-left: 0;
     }
     footer
     {
@@ -268,4 +267,12 @@ section p
         margin-left: auto;
         margin-right: auto;
     }
-}
+    .contain_founder
+    {
+        overflow: hidden;
+    }
+    header
+    {
+        display: none;
+    }
+};

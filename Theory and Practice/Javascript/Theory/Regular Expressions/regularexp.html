@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Regular Expresions in JS</title>
+    </head>
+    <body>
+        <h1>Regular Expresions in JS</h1>
+        <div id="neque"></div>
+        <div id="sit"></div>
+        <div id="libero"></div>
+        <script>
+            let str = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. In voluptas laudantium ex harum deleniti maiores reiciendis exercitationem minus aspernatur, sint, culpa nulla, veniam nemo perferendis hic id velit earum quos tempora optio asperiores labore aliquid magnam architecto. Eius sequi repudiandae illum, eos optio dolores error exercitationem provident cum explicabo. Id assumenda in exercitationem repellat. Tenetur, sequi reiciendis sed, tempora ad ipsum necessitatibus sunt LIBERO, dolores accusamus delectus atque? Illum iusto cumque ut adipisci facilis sint ab neque quia maiores, reiciendis, commodi esse ratione itaque saepe obcaecati enim repellat! Quam, doloremque. Facilis quidem, voluptatem ea vitae iure eligendi esse suscipit repellat, sint ab neque quia maiores?"
+
+            let reg_1 = /neque/;    //syntax for regular expression literal in js
+            let reg_2 = /sit/g;     //g stands for global --> shows all occurences
+            let reg_3 = /libero/i;     //i stands for case insensitive
+            console.log(reg_1);     //output: /neque/
+            console.log(reg_1.source);      //output: neque 
+            
+            //functions to match expressions
+            //.exec() --> will return an array of result for a match and null for not match
+            console.log(reg_1.exec(str));       //since g flag is not added, first and second clog will show only the first appearance index 
+            console.log(reg_1.exec(str));
+            console.log(reg_2.exec(str));       //since g flag is added, first clog will show the first appearance index
+            console.log(reg_2.exec(str));       //since g flag is added, second clog will show the second appearance index
+            console.log(reg_2.exec(str));       //since no third appearance, then null
+            console.log(reg_3.exec(str));
+            console.log(/Lorem/.exec(str));     //if no flags such as g or i are to be included then this can also be done
+
+            //.test() --> will return true or false
+            console.log(reg_3.test(str));
+            console.log(/lorem/.test(str));     //if no flags such as g or i are to be included then this can also be done
+
+            //.match() --> will return an array of result for a match and null for not match
+            console.log(str.match(/Tenetur/));
+            console.log(str.match(reg_2));      //console.log(reg_2.match(str)) is wrong!!!
+
+            //.search() --> returns index of first match else -1
+            console.log(str.search(reg_2));     //console.log(reg_2.search(str)) is wrong!!!
+            console.log(str.search(/puneet/));
+
+            //.replace() --> returns new string with all replacements
+            let res = str.replace(reg_1, 'nequesundh');     //if no flag given only first match will be replaced, if g flag given then all occurences will be replaced
+            console.log(res);
+        </script>
+    </body>
+</html>

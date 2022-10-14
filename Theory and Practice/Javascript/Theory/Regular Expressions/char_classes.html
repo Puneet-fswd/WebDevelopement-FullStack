@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Regular Expresions in JS</title>
+    </head>
+    <body>
+        <h1>Shorthand Character Classes</h1>
+        <script>
+            //Character classes
+            // \w --> word character
+            // \w+ --> one or more word characters
+            // \W --> non word characters
+            // \W+ --> one or more non word characters
+            // \d --> digit character
+            // \D --> non-digit character
+            // \s --> whitespace character
+            // \S --> non whitespace character
+            // \b --> word boundary
+            str = "harry45t pot34t4er ier34s a magici435an$%^tgbnj";
+            let reg_1 = /\war/;
+            console.log(reg_1.exec(str));
+            let reg_2 = /\Wtg/;
+            console.log(reg_2.exec(str));
+            let reg_3 = /\w+ar/;
+            console.log(reg_3.exec(str));
+            let reg_4 = /\W+tg/;
+            console.log(reg_4.exec(str));
+            let reg_5 = /\d5t/;
+            console.log(reg_5.exec(str));
+            let reg_6 = /\sm/;
+            console.log(reg_6.exec(str));
+            let reg_7 = /er\b/;
+            console.log(reg_7.exec(str));
+            let reg_8 = /\Der/;
+            console.log(reg_8.exec(str));
+            let reg_9 = /\d+an/;
+            console.log(reg_9.exec(str));
+            let reg_10 = /\S+ic/;
+            console.log(reg_10.exec(str));
+
+            //Assertions
+            let reg_11 = /pot(?=3)/;     //after 'pot' 3 should be present to get matched
+            console.log(reg_11.exec(str));
+            let reg_12 = /magic(?!y)/;
+            console.log(reg_12.exec(str));     //after 'magic' y should not be present to get matched
+        </script>
+    </body>
+</html>

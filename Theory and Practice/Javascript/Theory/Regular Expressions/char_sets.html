@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Regular Expresions in JS</title>
+    </head>
+    <body>
+        <h1>Character Sets, Quantifiers and Groupings</h1>
+        <script>
+            str = "harry potter is a magician, harharry is also a magician90";
+            //Character sets
+            let reg_1 = /h[abcde]rry/;    //any character from a,b,c,d,e can match 
+            let reg_2 = /h[^abcde]rry/;     //any character from a,b,c,d,e cannot match 
+            let reg_3 = /h[a-zA-Z]rry/;     //any character from a-z and A-Z can match 
+            let reg_4 = /h[a-zA-Z]rr[yu0-9]/;     //any character from a-z and A-Z and y,u or 0-9 can match 
+
+            //Quantifiers
+            let reg_5 = /har{0,2}y/;    //means hay, hary and harry will match. {0,2} => no. of times r is allowed for matching
+
+            //Groupings
+            let reg_6 = /(har){0,2}y/;     //means y, hary, harhary will match. (har){0,2} => no. of times har is allowed for matching
+
+            console.log(reg_1.exec(str));       
+            console.log(reg_2.exec(str));
+            console.log(reg_3.exec(str));       
+            console.log(reg_4.exec(str));       
+            console.log(reg_5.exec(str));       
+            console.log(reg_6.exec(str));
+        </script>
+    </body>
+</html>

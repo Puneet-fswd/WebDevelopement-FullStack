@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Local and Session Storage in JS</title>
+    </head>
+    <body>
+        <h1>Local and Session Storage in JS</h1>
+        <h2>Local Storage</h2>
+        <div id="name_1"></div>
+        <div id="name_2"></div>
+        <div id="name_3"></div>
+        <div id="name_4"></div>
+        <div id="name_5"></div>
+        <div id="arr"></div>
+
+        <h2>Session Storage</h2>
+        <div id="ssname_1"></div>
+        <div id="ssname_2"></div>
+        <div id="ssname_3"></div>
+        <div id="ssname_4"></div>
+        <div id="ssname_5"></div>
+        <div id="ssarr"></div>
+        <script>
+            console.log('Hello World');
+
+            //Local Storage: stored forever
+
+            //adding items in local storage
+            localStorage.setItem('name_1', 'xyz');
+            localStorage.setItem('name_2', 'abc');
+            localStorage.setItem('name_3', 'pqr');
+            localStorage.setItem('name_4', 'ijk');
+            localStorage.setItem('name_5', 'lmn');
+            localStorage.setItem('name_6', 'opq');
+
+            //localStorage.clear() --> clears the local storage
+
+            //removing a particular key-value pair from the ls
+            localStorage.removeItem('name_6');
+
+            //arrays cannot be added to the ls, this can be overcomed by using JSON function -->
+            let arr_1 = ["name", "class", "college", "degree"];
+            localStorage.setItem('arr_1', JSON.stringify(arr_1));       //just looks like an array in the output but still a string
+
+            //retrieving items from local storage and printing in console
+            console.log(localStorage.getItem('name_1'));
+            console.log(localStorage.getItem('name_2'));
+            console.log(localStorage.getItem('name_3'));
+            console.log(localStorage.getItem('name_4'));
+            console.log(localStorage.getItem('name_5'));
+            console.log(JSON.parse(localStorage.getItem('arr_1')));       //completely turns into an array
+            console.log(typeof(JSON.parse(localStorage.getItem('arr_1'))));   //output: object
+
+            //retrieving items from local storage and printing on web page
+            document.getElementById('name_1').innerHTML = window.localStorage.name_1;
+            document.getElementById('name_2').innerHTML = window.localStorage.name_2;
+            document.getElementById('name_3').innerHTML = window.localStorage.name_3;
+            document.getElementById('name_4').innerHTML = window.localStorage.name_4;
+            document.getElementById('name_5').innerHTML = window.localStorage.name_5;
+            document.getElementById('arr').innerHTML = window.localStorage.arr_1;
+
+            //Session Storage: clears immidiately oncee the browser is closed
+
+            //adding items in session storage
+            let arr_2 = ["name", "class", "college", "year"];
+            sessionStorage.setItem('sessionname_1', 'xyz');
+            sessionStorage.setItem('sessionname_2', 'abc');
+            sessionStorage.setItem('sessionname_3', 'pqr');
+            sessionStorage.setItem('sessionname_4', 'ijk');
+            sessionStorage.setItem('sessionname_5', 'lmn');
+            sessionStorage.setItem('sessionname_6', 'opq');
+            sessionStorage.setItem('arr_2', JSON.stringify(arr_2));
+
+            //localStorage.clear() --> clears the local storage
+
+            //removing a particular key-value pair from the ss
+            sessionStorage.removeItem('name_6');
+
+            //retrieving items from session storage and printing on web page
+            document.getElementById('ssname_1').innerHTML = window.sessionStorage.sessionname_1;
+            document.getElementById('ssname_2').innerHTML = window.sessionStorage.sessionname_2;
+            document.getElementById('ssname_3').innerHTML = window.sessionStorage.sessionname_3;
+            document.getElementById('ssname_4').innerHTML = window.sessionStorage.sessionname_4;
+            document.getElementById('ssname_5').innerHTML = window.sessionStorage.sessionname_5;
+            let a = JSON.parse(window.sessionStorage.arr_2);
+            document.getElementById('ssarr').innerHTML = a;
+        </script>
+    </body>
+</html>

@@ -9,16 +9,40 @@
     <body>
         <h1>Functions in Javascript</h1>
         <script>
-            let bread1=prompt("Which bread would you like to have?");
-            let veg1=prompt("Which veggies would you like to have?");
-            let sauces1=prompt("Which sauces would you like to have?");
-            function sandwich(bread, veg, sauces)
+            //conventional functions
+            function conventional()
             {
-                let order=bread+veg+sauces+" "+"sandwich is ready";
-                return order;
+                console.log('This is a conventional function type');
             }
-            let vsandwich=sandwich(bread1, veg1, sauces1);
-            console.log(vsandwich);
+            conventional();
+
+            //conventional functions taking and returning some value
+            function conv_ret(a,b)
+            {
+                return a+b;
+            }
+            console.log(conv_ret(5,2));
+
+            //arrow functions
+            let arrow_1 = () =>
+            {
+                console.log('I am an arrow function');
+            }
+            arrow_1();
+
+            //arrow functions returning some value 
+            let arrow_2 = (a,b) =>
+            {
+                return a%b;
+            }
+            console.log(arrow_2(5,2));
+
+            //one liner arrow functions 
+            //syntax: func name = () => value to be returned
+            let arrow_3 = (a,b,c) => a+b+c;
+            console.log(arrow_3(1,2,3)); 
+
+            //to return an object, syntax: func name = () => ({name: 'puneet'})
         </script>
     </body>
 </html>

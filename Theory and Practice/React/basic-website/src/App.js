@@ -4,6 +4,7 @@ import TextForm from './components/TextForm';
 import About from './components/About';
 import React, {useState} from 'react';
 import Alerts from './components/Alerts';
+// import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 
 function App() 
@@ -19,7 +20,7 @@ function App()
     setTimeout(()=>
     {
       setAlert(null);
-    }, 1500);
+    }, 2000);
   } 
   let toggleMode = () =>
   {
@@ -27,23 +28,33 @@ function App()
     {
       setMode('dark');
       document.body.style.backgroundColor = 'black';
-      showAlert('Dark mode enabled', 'Success');
+      showAlert('Dark mode enabled', 'success');
     }
     else
     {
       setMode('light');
       document.body.style.backgroundColor = 'white';
-      showAlert('Light mode enabled', 'Success');
+      showAlert('Light mode enabled', 'success');
     }
   }
   return ( 
     <>
-    <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode}></Navbar>
-    <Alerts alert={alert}></Alerts>
-      <div className="container my-3">
-        <TextForm heading="Enter text to convert" mode={mode} showAlert={showAlert}></TextForm>
-      </div>
-      <About mode={mode}></About>
+    {/* <Router> */}
+      <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode}/>
+      <Alerts alert={alert}/>
+      {/* <Routes> */}
+        {/* <Route exact path="/about"> */}
+          <div className="container my-3">
+            <TextForm heading="Enter text to convert" mode={mode} showAlert={showAlert}/>
+          </div>
+        {/* </Route> */}
+        {/* <Route exact path="/"> */}
+        <section id="about">
+          <About mode={mode}/>
+        </section>
+        {/* </Route> */}
+      {/* </Routes> */}
+    {/* </Router> */}
     </>
   );
 }

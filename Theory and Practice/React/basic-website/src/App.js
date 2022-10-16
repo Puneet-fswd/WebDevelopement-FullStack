@@ -45,7 +45,7 @@ function App()
       {/* <Routes> */}
         {/* <Route exact path="/about"> */}
           <div className="container my-3">
-            <TextForm heading="Enter text to convert" mode={mode} showAlert={showAlert}/>
+            <TextForm heading="Try TextUtils here" mode={mode} showAlert={showAlert}/>
           </div>
         {/* </Route> */}
         {/* <Route exact path="/"> */}

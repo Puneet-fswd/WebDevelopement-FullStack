@@ -19,6 +19,18 @@ export default function About(props)
                 </div>
             </div>
             <div className="accordion-item" style={{backgroundColor: props.mode==='light'?'white':'black'}}>
+                <h2 className="accordion-header" id="headingOne" style={{border: props.mode==='light'?'1px solid black':'1px solid skyblue'}}>
+                    <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style={{backgroundColor: props.mode==='light'?'white':'black', color: props.mode==='light'?'black':'skyblue'}}>
+                        Free to use 
+                    </button>
+                </h2>
+                <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div className="accordion-body" style={{color: props.mode==='light'?'black':'skyblue'}}>
+                        <strong>This website is absolutely free to use</strong> This page give instant word and character count to the text entered by the user and also a solution to all your word modification needs.
+                    </div>
+                </div>
+            </div>
+            <div className="accordion-item" style={{backgroundColor: props.mode==='light'?'white':'black'}}>
                 <h2 className="accordion-header" id="headingTwo" style={{border: props.mode==='light'?'1px solid black':'1px solid skyblue'}}>
                     <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style={{backgroundColor: props.mode==='light'?'white':'black', color: props.mode==='light'?'black':'skyblue'}}>
                         Founder 

@@ -1,2 +1,0 @@
-This is a standard text file.
-I have added this file to the NodeJs folder as i will be using this file to practise and test different NodeJs modules and functions ahead.

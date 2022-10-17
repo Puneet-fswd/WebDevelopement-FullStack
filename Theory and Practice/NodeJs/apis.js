@@ -1,3 +1,5 @@
+//static API
+
 let api = 
 [{
     name: 'puneet',

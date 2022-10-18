@@ -1,0 +1,29 @@
+FSWD Roadmap:
+HTML
+CSS
+JavaScript
+ReactJS
+NodeJS
+PhP
+MongoDB
+
+GitHub
+Https Link: https://github.com/Puneet-fswd/WebDevelopement-FullStack.git
+SSH Link: git@github.com:Puneet-fswd/WebDevelopement-FullStack.git
+
+React- VsCode Directory:
+"C:\Users\punee\OneDrive\Desktop\Web Developement\Theory and Practice\React"
+
+NodeJs- VsCode Directory:
+"C:\Users\punee\OneDrive\Desktop\Web Developement\Theory and Practice\NodeJs"
+
+for running webpage after npm build: serve -s build
+
+jsonplaceholder --> website for rest API's
+
+npm methods
+--> npm --version
+--> npm init
+--> npm install package-name
+--> npm uninstall package-name
+--> npm install => to install node modules

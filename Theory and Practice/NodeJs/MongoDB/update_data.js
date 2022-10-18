@@ -1,18 +1,18 @@
 //updating data in MongoDB using NodeJs
 
-const dbConnect = require('./database');
+const dbConnect = require('./database.js');
 
 const update = async () =>
 {
     const db = await dbConnect();
     let result = await db.updateOne(
         {
-            price: '15999'    //entity to be updated 
+            price: '14999'    //entity to be updated 
         },
         {
             $set: 
             {
-                price: '14999'
+                price: '15999'
             }
         });
     console.log(result);

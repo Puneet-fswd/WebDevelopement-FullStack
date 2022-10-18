@@ -39,7 +39,7 @@ export default function About(props)
                 <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                     <div className="accordion-body" style={{color: props.mode==='light'?'black':'skyblue'}}>
                         <strong>Our founder is Puneet Amrutkar</strong>
-                        <p>A tech enthusiast, loves to use technology for the upliftment of th esociety and community</p>
+                        <p>A tech enthusiast, who loves to use technology for the upliftment of the society and community</p> 
                     </div>
                 </div>
             </div>

@@ -26,6 +26,7 @@ app.get('/profile', (req, res) =>
 
 app.get('/login', (req, res) =>
 {
+    // Rendering login.ejs page
     res.render('login');
 })
 
@@ -57,5 +58,5 @@ app.get('*', (req, res) =>
 
 app.listen(80);
 
-//code to access html pages 
+// code to access html pages 
 // app.use(express.static(path variable));

@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.6efa3b41.css",
-    "main.js": "/static/js/main.6d016fa3.js",
-    "static/js/787.dde6de0a.chunk.js": "/static/js/787.dde6de0a.chunk.js",
-    "static/media/SEGA.woff": "/static/media/SEGA.47b4bfa94ef243af4a5b.woff",
-    "index.html": "/index.html",
-    "main.6efa3b41.css.map": "/static/css/main.6efa3b41.css.map",
-    "main.6d016fa3.js.map": "/static/js/main.6d016fa3.js.map",
-    "787.dde6de0a.chunk.js.map": "/static/js/787.dde6de0a.chunk.js.map"
+    "main.css": "/WebDevelopement-FullStack/static/css/main.21f32597.css",
+    "main.js": "/WebDevelopement-FullStack/static/js/main.8928259b.js",
+    "static/js/787.62c812d3.chunk.js": "/WebDevelopement-FullStack/static/js/787.62c812d3.chunk.js",
+    "index.html": "/WebDevelopement-FullStack/index.html",
+    "main.21f32597.css.map": "/WebDevelopement-FullStack/static/css/main.21f32597.css.map",
+    "main.8928259b.js.map": "/WebDevelopement-FullStack/static/js/main.8928259b.js.map",
+    "787.62c812d3.chunk.js.map": "/WebDevelopement-FullStack/static/js/787.62c812d3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6efa3b41.css",
-    "static/js/main.6d016fa3.js"
+    "static/css/main.21f32597.css",
+    "static/js/main.8928259b.js"
   ]
 }
